@@ -17,7 +17,7 @@ from tensorflow.python.framework.convert_to_constants import convert_variables_t
 parser = argparse.ArgumentParser()
 parser.add_argument("--mode", choices=["train", "test"], default="train", help="Run training or testing")
 args = parser.parse_args()
-model_name = 'randfixed_pt'
+model_name = 'randfixed_pt_small'
 
 # ---------------------------
 # Aggregation Layer
