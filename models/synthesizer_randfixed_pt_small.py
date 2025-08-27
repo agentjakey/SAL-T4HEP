@@ -235,9 +235,9 @@ model = build_synthesizer_transformer_classifier(
 model.compile(optimizer="adam", loss="categorical_crossentropy", metrics=["accuracy"])
 
 # ---------------------------
-# Trainable parameters
+# Total parameters
 # ---------------------------
-print(f"Total trainable parameters: {model.count_params():,}")
+print(f"Total parameters: {model.count_params():,}")
 
 # ---------------------------
 # Callbacks & Logging
