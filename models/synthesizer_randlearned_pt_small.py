@@ -184,8 +184,8 @@ def get_flops(model, input_shape):
 # ---------------------------
 def build_synthesizer_transformer_classifier(
     num_particles, feature_dim,
-    d_model=16, d_ff=16, output_dim=5,
-    num_heads=4): 
+    d_model=8, d_ff=8, output_dim=5,
+    num_heads=2): 
 
     inputs = layers.Input((num_particles, feature_dim)) 
     x = layers.Dense(d_model, activation='relu')(inputs) 
